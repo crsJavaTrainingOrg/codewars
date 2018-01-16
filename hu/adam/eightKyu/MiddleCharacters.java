@@ -1,3 +1,6 @@
+package hu.adam.eightKyu;
+
+
 //www.codewars.com/kata/get-the-middle-character
 public class MiddleCharacters{
     

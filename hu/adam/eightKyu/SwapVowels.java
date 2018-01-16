@@ -1,3 +1,5 @@
+package hu.adam.eightKyu;
+
 //https://www.codewars.com/kata/case-swapping
 public class SwapVowels{
     

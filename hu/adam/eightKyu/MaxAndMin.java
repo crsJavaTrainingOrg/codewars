@@ -1,3 +1,6 @@
+package hu.adam.eightKyu;
+
+
 //https://www.codewars.com/kata/highest-and-lowest
 public class MaxAndMin{
 
