@@ -10,8 +10,8 @@ public class SwapVowels{
         for(int i = 0; i < characters.length; i++) {
             char ch1 = characters[i];
             if(Character.isUpperCase(ch1) == true){
-                char ch3 =Character.toLowerCase(ch1);
-                str = str + ch3;
+                char ch2 =Character.toLowerCase(ch1);
+                str = str + ch2;
             }
             if(Character.isUpperCase(ch1) == false){
                 
