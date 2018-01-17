@@ -12,8 +12,10 @@ public class JadenCase {
         }
 
         for(int i = 0; i <= wordsOfPhrase.length-1; i++){
+            
             newphrase = newphrase + wordsOfPhrase[i].substring(0,1).toUpperCase() +
             wordsOfPhrase[i].substring(1);
+            
             if(i < wordsOfPhrase.length - 1){
                 newphrase = newphrase + " ";
             }
