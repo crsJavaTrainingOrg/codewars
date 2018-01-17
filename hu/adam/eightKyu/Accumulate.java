@@ -2,27 +2,28 @@ package hu.adam.eightKyu;
 
 //https://www.codewars.com/kata/mumbling/train/java
 
-public class Accumulate{
+public class Accumulate {
 
-    public static String accumulate(String s){
-        String characters = "";
-        
-        for(int i = 0; i <s.length(); i++){ 
-            for(int j = 0; j <= i; j++){
+    public static void main(String[] args) {
+        System.out.println(accumulate("cwAt"));
+    }
 
-                if(j==0){ 
+    public static String accumulate(String s) {
+        StringBuilder result = new StringBuilder();
 
-                    characters = characters + Character.toUpperCase(s.charAt(i));
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = 0; j <= i; j++) {
+
+                if (j == 0) {
+                    result.append(Character.toUpperCase(s.charAt(i)));
+                } else {
+                    result.append(Character.toLowerCase(s.charAt(i)));
                 }
-                else if (j > 0){
-                    characters = characters + Character.toLowerCase(s.charAt(i));
-                }//
-
             }
-            if(i < s.length()-1){
-                characters = characters + "-";
+            if (i < s.length() - 1) {
+                result.append("-");
             }
         }
-        return characters;
+        return result.toString();
     }
 }
