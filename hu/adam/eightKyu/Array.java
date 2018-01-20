@@ -1,3 +1,5 @@
+package hu.adam.eightKyu;
+
 import java.util.concurrent.ThreadLocalRandom;
 public class Array{
 

@@ -1,3 +1,5 @@
+package hu.adam.eightKyu;
+
 public abstract class Shape{
     protected int angles;
     public Shape(int angles){

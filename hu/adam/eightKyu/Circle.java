@@ -1,3 +1,5 @@
+package hu.adam.eightKyu;
+
 import java.lang.Math;
 
 public class Circle extends Shape{

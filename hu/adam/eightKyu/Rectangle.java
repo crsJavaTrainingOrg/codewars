@@ -1,3 +1,5 @@
+package hu.adam.eightKyu;
+
 public class Rectangle extends Shape{
     private double sideA;
     private double sideB;

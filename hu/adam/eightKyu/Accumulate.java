@@ -1,3 +1,5 @@
+package hu.adam.eightKyu;
+
  
 
 //https://www.codewars.com/kata/mumbling/train/java
