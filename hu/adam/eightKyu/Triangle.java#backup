@@ -1,13 +1,15 @@
+package hu.adam.eightKyu;
+
 import java.lang.Math;
 
-public class Triangle extends Shape{
+public class Triangle implements Shape{
     private double sideA;
     private double sideB;
     private double sideC;
     private double p;//perimeter
     
     public Triangle(double a, double b, double c){
-        super(3);
+        
         sideA = a;
         sideB = b;
         sideC = c;
@@ -19,7 +21,7 @@ public class Triangle extends Shape{
     }
     
     public Triangle shapeFactory(int angles){
-        if(angles ==3){
+        if(angles ==Angles.TRIANGLE.getValue()){
             return new Triangle(sideA,sideB,sideC);
         }
         return null;
