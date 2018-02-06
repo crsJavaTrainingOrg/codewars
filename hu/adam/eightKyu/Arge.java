@@ -4,11 +4,12 @@ import java.lang.Math;
 
 
 public class Arge{
-    public static int nbYear(int p0, double percent, int aug, int p){
+    public static int nbYear( int p0, double percent, int aug, int p){
+        int years = p0;
         int numberOfYears = 0;
         double realPercent = percent / 100;
-        while(p0<=p){
-            p0 = p0 + (int) Math.round(p0 * realPercent) + aug;
+        while(p0<p){
+            years = p0 + (int) Math.round(p0 * realPercent) + aug;
             numberOfYears++;
         }
         return numberOfYears;

@@ -13,11 +13,11 @@ public class Dinglemouse {
                 catYears= catYears + 15;
                 dogYears = dogYears + 15;
             }
-            if(i == 2){
+            else if (i == 2){
                 catYears = catYears + 9;
                 dogYears = dogYears + 9;
             }
-            if(i>2){
+           else{
                 catYears = catYears + 4;
                 dogYears = dogYears + 5;
             }
