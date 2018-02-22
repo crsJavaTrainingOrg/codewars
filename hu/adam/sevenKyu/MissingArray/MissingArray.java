@@ -1,4 +1,4 @@
-package com.company;
+package adam.sevenKyu.MissingArray;
 
 //https://www.codewars.com/kata/length-of-missing-array/train/java
 import java.util.ArrayList;
