@@ -6,23 +6,17 @@ import java.math.BigInteger;
 public class Numbers{
     public static String firstTenDigitsOfSum(String[] numbers){
 
-        StringBuilder result = new StringBuilder();
-        BigInteger sum = BigInteger.ZERO;
+        String result;
+        BigInteger sum =  new BigInteger("0");
 
         for(int i = 0; i < numbers.length; i++){
-            sum.add(new BigInteger(numbers[i]));
+            sum = sum.add(new BigInteger(numbers[i]));
 
         }
+        
 
-
-        String digits = sum.toString();
-        for(int k = 0; k < 10; k++){
-            result.append(digits.charAt(k));
-
-        }
-
-        System.out.println(result);
-        return result.toString();
+        System.out.print(sum.toString().substring(0,10));
+        return sum.toString().substring(0,10);
 
     }
 }
