@@ -1,4 +1,4 @@
-package com.company;
+package hu.adam.sevenKyu;
 
 public class TesthighestScoringString {
     public static void main(String args[]) {
