@@ -1,6 +1,4 @@
-package sixKyuExercises.TalkLikeSiegfried;
-
-import sixKyuExercises.TalkLikeSiegfried.TalkLikeSigfried;
+package adam.sixKyu.TalkLikeSiegfried;
 
 public class TalkLikeSigfriedTest {
     public static void main(String[] args){

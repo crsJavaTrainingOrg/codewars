@@ -1,4 +1,4 @@
-package sixKyuExercises.TalkLikeSiegfried;
+package adam.sixKyu.TalkLikeSiegfried;
 
 public class TalkLikeSigfried {
     public static String siegfried(final int week, final String str) {
