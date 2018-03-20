@@ -1,8 +1,5 @@
-<<<<<<< HEAD:hu/adam/sevenKyu/MissingArray.java
-package hu.adam.sevenKyu;
-=======
 package adam.sevenKyu.MissingArray;
->>>>>>> 87574baf3e12c09684b0344ee623f0f9c690ca3e:hu/adam/sevenKyu/MissingArray/MissingArray.java
+
 
 //https://www.codewars.com/kata/length-of-missing-array/train/java
 import java.util.ArrayList;
