@@ -73,7 +73,7 @@ public class TalkLikeSigfried {
     }
 
     private static String week3Rule2(String sentence) {
-        return sentence.replaceAll("(\\w)\\1", "$1");
+        return sentence.replaceAll("(?i)([a-zA-Z])\\1", "$1");
     }
 
     private static String week4Rule1(String sentence) {
@@ -109,7 +109,7 @@ public class TalkLikeSigfried {
     }
 
     private static String week5Rule3(String sentence) {
-        return sentence.replaceAll("(\\w)ing\\b", "$1ung");
+        return sentence.replaceAll("(\\w)ing\\b", "$1ink");
     }
 
     private static String week5Rule4(String sentence) {
