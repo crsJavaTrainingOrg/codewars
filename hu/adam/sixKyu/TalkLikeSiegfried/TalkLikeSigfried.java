@@ -4,7 +4,16 @@ package adam.sixKyu.TalkLikeSiegfried;
 public class TalkLikeSigfried {
     public static String siegfried(final int week, final String str) {
 
-        return week1(str);
+        String translatedSentence = "";
+        if (week >= 1) {
+            translatedSentence = week1(str);
+        }
+
+        if (week >= 2) {
+            translatedSentence = week2(translatedSentence);
+        }
+
+        return translatedSentence;
 
         /*String[] words = str.split(" ");
 
@@ -44,7 +53,11 @@ public class TalkLikeSigfried {
 
     private static String week1(String sentence) {
         return week1Rule3(week1Rule2(week1Rule1(sentence)));
+    }
 
+    private static String week2(String sentence) {
+        return sentence.replaceAll("p(?i)h", "f")
+                .replaceAll("P(?i)h", "F");
     }
 
     private static String week1Rule1(String sentence) {
@@ -65,7 +78,5 @@ public class TalkLikeSigfried {
         return sentence.replaceAll("c(?!h)", "k")
                 .replaceAll("C(?!h)", "K");
     }
-
-
 }
 
