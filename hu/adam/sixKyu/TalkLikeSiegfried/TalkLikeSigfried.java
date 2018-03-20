@@ -21,6 +21,10 @@ public class TalkLikeSigfried {
             translatedSentence = week4(translatedSentence);
         }
 
+        if (week >= 5) {
+            translatedSentence = week5(translatedSentence);
+        }
+
         return translatedSentence;
     }
 
@@ -39,6 +43,10 @@ public class TalkLikeSigfried {
 
     private static String week4(String sentence) {
         return week4Rule4(week4Rule3(week4Rule2(week4Rule1(sentence))));
+    }
+
+    private static String week5(String sentence) {
+        return week5Rule4(week5Rule3(week5Rule2(week5Rule1(sentence))));
     }
 
     private static String week1Rule1(String sentence) {
@@ -86,6 +94,27 @@ public class TalkLikeSigfried {
     private static String week4Rule4(String sentence) {
         return sentence.replaceAll("w", "v")
                 .replaceAll("W", "V");
+    }
+
+    private static String week5Rule1(String sentence) {
+        return sentence.replaceAll("o(?i)u", "u")
+                .replaceAll("O(?i)u", "U");
+    }
+
+    private static String week5Rule2(String sentence) {
+        return sentence.replaceAll("AN", "UN")
+                .replaceAll("An", "Un")
+                .replaceAll("aN", "uN")
+                .replaceAll("an", "un");
+    }
+
+    private static String week5Rule3(String sentence) {
+        return sentence.replaceAll("(\\w)ing\\b", "$1ung");
+    }
+
+    private static String week5Rule4(String sentence) {
+        return sentence.replaceAll("\\b(Sm)", "Schm")
+                .replaceAll("\\b(sm)", "schm");
     }
 }
 
